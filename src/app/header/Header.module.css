@@ -1,0 +1,55 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 16px 32px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.header__nav ul,
+.header__help ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header__nav {
+  flex: 1;
+}
+
+.header__title {
+  flex: 1;
+  text-align: center;
+}
+
+.header__title h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #222;
+}
+
+.header__help {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header__nav li,
+.header__help li {
+  cursor: pointer;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.2s;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.header__nav li:hover,
+.header__help li:hover {
+  background: #f0f4ff;
+  color: #0070f3;
+} 

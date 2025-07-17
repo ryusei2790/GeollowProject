@@ -1,0 +1,408 @@
+.searchNavSection {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100vw;
+    height: 55px;
+    padding: 20px 0;
+    background-color: black;
+    gap: 24px;
+}
+
+.searchNavSection__search {
+    position: relative;
+    height: 50px;
+    margin-left: 20px;
+    flex: 1;
+}
+
+.searchNavSection__search--form {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    padding: 0 12px;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.searchNavSection__search--form_input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    color: #5a6a7a;
+    padding: 12px 0;
+    background: transparent;
+    font-weight: 300;
+}
+
+.searchNavSection__search--form_button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #444;
+    font-size: 1.5rem;
+    padding: 0 8px;
+    display: flex;
+    align-items: center;
+}
+
+.searchNavSection__search--form_button:focus {
+    outline: none;
+}
+
+.searchNavSection__select {
+    position: relative;
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchNavSection__select--custom_select {
+    position: relative;
+    display: inline-block;
+}
+
+.searchNavSection__select--trigger {
+    padding: 10px 24px;
+    border: 2px solid #1976d2;
+    border-radius: 8px;
+    background: #fff;
+    color: #1976d2;
+    font-size: 1.1rem;
+    cursor: pointer;
+    outline: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.searchNavSection__select--arrow {
+    font-size: 1rem;
+}
+
+.searchNavSection__select--dropdown {
+    display: none;
+    position: absolute;
+    top: 110%;
+    left: 0;
+    min-width: 220px;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+    padding: 24px 24px 16px 24px;
+    z-index: 10;
+}
+
+.searchNavSection__select--custom_select.open .searchNavSection__select--dropdown {
+    display: block;
+}
+
+.searchNavSection__select--option {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 1.2rem;
+    margin-bottom: 18px;
+    cursor: pointer;
+}
+
+.searchNavSection__select--option input[type="radio"] {
+    accent-color: #1976d2;
+    width: 22px;
+    height: 22px;
+}
+
+.searchNavSection__select--apply_btn {
+    width: 100%;
+    background: #1976d2;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 0;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+.searchNavSection__select--dropdown_price {
+    min-width: 380px;
+    padding-top: 16px;
+}
+
+.searchNavSection__select--dropdown_title {
+    font-weight: bold;
+    color: #6b7a90;
+    font-size: 1.15rem;
+    margin-bottom: 18px;
+}
+
+.searchNavSection__select--price_row {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    gap: 16px;
+}
+
+.searchNavSection__select--price_col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.searchNavSection__select--price_label {
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 4px;
+}
+
+.searchNavSection__select--price_select {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    background: #f8fafd;
+    color: #6b7a90;
+    appearance: none;
+}
+
+.searchNavSection__select--price_separator {
+    font-size: 2rem;
+    color: #888;
+    padding: 0 8px;
+    align-self: center;
+}
+
+.searchNavSection__select--dropdown_beds {
+    min-width: 420px;
+    padding-top: 16px;
+}
+
+.searchNavSection__select--beds_section {
+    margin-bottom: 16px;
+}
+
+.searchNavSection__select--beds_label {
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+}
+
+.searchNavSection__select--beds_options {
+    display: flex;
+    gap: 0;
+    margin-bottom: 12px;
+}
+
+.searchNavSection__select--beds_btn {
+    flex: 1;
+    border: 2px solid #d1d5db;
+    background: #fff;
+    color: #222;
+    font-size: 1.1rem;
+    padding: 12px 0;
+    cursor: pointer;
+    border-right: none;
+    border-radius: 0;
+    outline: none;
+    transition: background 0.2s, color 0.2s;
+}
+
+.searchNavSection__select--beds_btn:first-child {
+    border-radius: 8px 0 0 8px;
+}
+
+.searchNavSection__select--beds_btn:last-child {
+    border-radius: 0 8px 8px 0;
+    border-right: 2px solid #d1d5db;
+}
+
+.searchNavSection__select--beds_btn.active,
+.searchNavSection__select--beds_btn:active {
+    background: #eaf4ff;
+    color: #1976d2;
+    border-color: #1976d2;
+    z-index: 1;
+}
+
+.searchNavSection__select--exact_match {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: #444;
+}
+
+.searchNavSection__select--exact_match input[type="checkbox"] {
+    accent-color: #1976d2;
+    width: 18px;
+    height: 18px;
+}
+
+.searchNavSection__select--dropdown_home_type {
+    min-width: 320px;
+    padding-top: 16px;
+}
+
+.searchNavSection__select--dropdown_section_title {
+    font-weight: bold;
+    color: #6b7a90;
+    font-size: 1.05rem;
+    margin: 24px 0 12px 0;
+    padding-top: 16px;
+    border-top: 1px solid #e5e7eb;
+}
+
+.searchNavSection__select--home_type_option {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 1.1rem;
+    margin-bottom: 16px;
+    cursor: pointer;
+    color: #222;
+}
+
+.searchNavSection__select--home_type_option input[type="checkbox"] {
+    accent-color: #1976d2;
+    width: 20px;
+    height: 20px;
+}
+
+.searchNavSection__select--deselect_all .searchNavSection__select--deselect_label {
+    color: #6b7a90;
+    font-weight: bold;
+}
+
+.searchNavSection__select--dropdown_more {
+    min-width: 380px;
+    padding-top: 16px;
+}
+
+.searchNavSection__select--more_section {
+    margin-bottom: 20px;
+}
+
+.searchNavSection__select--more_label {
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+}
+
+.searchNavSection__select--more_date {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: 2px solid #d1d5db;
+    border-radius: 8px;
+    padding: 0 12px;
+    background: #f8fafd;
+}
+
+.searchNavSection__select--more_date_input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 12px 0;
+    background: transparent;
+    font-size: 1rem;
+    color: #6b7a90;
+}
+
+.searchNavSection__select--calendar_icon {
+    font-size: 1.2rem;
+    color: #888;
+    cursor: pointer;
+}
+
+.searchNavSection__select--more_range {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.searchNavSection__select--more_select,
+.searchNavSection__select--more_input {
+    flex: 1;
+    padding: 12px 16px;
+    border: 2px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 1rem;
+    background: #f8fafd;
+    color: #6b7a90;
+    appearance: none;
+}
+
+.searchNavSection__select--more_separator {
+    font-size: 1.5rem;
+    color: #888;
+    padding: 0 4px;
+}
+
+.searchNavSection__select--more_checkbox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1rem;
+    color: #444;
+    cursor: pointer;
+}
+
+.searchNavSection__select--more_checkbox input[type="checkbox"] {
+    accent-color: #1976d2;
+    width: 18px;
+    height: 18px;
+}
+
+.searchNavSection__select--more_actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 24px;
+    padding-top: 16px;
+    border-top: 1px solid #e5e7eb;
+}
+
+.searchNavSection__select--reset_btn {
+    flex: 1;
+    background: #f3f4f6;
+    color: #6b7a90;
+    border: 2px solid #d1d5db;
+    border-radius: 6px;
+    padding: 12px 0;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.searchNavSection__select--reset_btn:hover {
+    background: #e5e7eb;
+}
+
+.searchNavSection__select--save_search_btn {
+    background: #1976d2;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 24px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.searchNavSection__select--save_search_btn:hover {
+    background: #1565c0;
+} 
