@@ -1,77 +1,64 @@
 {
-  "type": "FeatureCollection",
-  "features": [
+  "lat": 35.681236,
+  "lng": 139.767125,
+  "zoom": 12,
+  "width": "100%",
+  "height": "400px",
+  "listings": [
     {
-      "type": "Feature",
-      "properties": {
-        "title": "$1,853+ 2 bds",
-        "address": "東京都渋谷区道玄坂2-24-1",
-        "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.698212, 35.658034]
-      }
+      "title": "$1,853+ 2 bds",
+      "address": "東京都渋谷区道玄坂2-24-1",
+      "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80",
+      "badge": "Special Offer",
+      "options": [
+        { "price": "$1,853+", "label": "2 bd" },
+        { "price": "$2,050+", "label": "3 bd" }
+      ]
     },
     {
-      "type": "Feature",
-      "properties": {
-        "title": "$1,900+ 3 bds",
-        "address": "東京都新宿区西新宿2-8-1",
-        "image": "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=400&q=80"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.692101, 35.689592]
-      }
+      "title": "$1,900+ 3 bds",
+      "address": "東京都新宿区西新宿2-8-1",
+      "image": "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=400&q=80",
+      "badge": "2 available units",
+      "options": [
+        { "price": "$1,900+", "label": "3 bd" }
+      ]
     },
     {
-      "type": "Feature",
-      "properties": {
-        "title": "$2,200+ 1 bd",
-        "address": "東京都港区南青山1-1-1",
-        "image": "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.722007, 35.665213]
-      }
+      "title": "$2,200+ 1 bd",
+      "address": "東京都港区南青山1-1-1",
+      "image": "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80",
+      "badge": "New Listing",
+      "options": [
+        { "price": "$2,200+", "label": "1 bd" }
+      ]
     },
     {
-      "type": "Feature",
-      "properties": {
-        "title": "$2,500+ 2 bds",
-        "address": "東京都世田谷区三軒茶屋2-2-2",
-        "image": "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=400&q=80"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.669071, 35.646688]
-      }
+      "title": "$2,500+ 2 bds",
+      "address": "東京都世田谷区三軒茶屋2-2-2",
+      "image": "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=400&q=80",
+      "badge": "Special Offer",
+      "options": [
+        { "price": "$2,500+", "label": "2 bd" }
+      ]
     },
     {
-      "type": "Feature",
-      "properties": {
-        "title": "$1,800+ 1 bd",
-        "address": "東京都豊島区池袋3-3-3",
-        "image": "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.710388, 35.73256]
-      }
+      "title": "$1,800+ 1 bd",
+      "address": "東京都豊島区池袋3-3-3",
+      "image": "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80",
+      "badge": "2 available units",
+      "options": [
+        { "price": "$1,800+", "label": "1 bd" }
+      ]
     },
     {
-      "type": "Feature",
-      "properties": {
-        "title": "$2,800+ 3 bds",
-        "address": "東京都中央区銀座4-4-4",
-        "image": "https://images.unsplash.com/photo-1467987506553-8f3916508521?auto=format&fit=crop&w=400&q=80"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [139.764936, 35.671669]
-      }
+      "title": "$2,800+ 3 bds",
+      "address": "東京都中央区銀座4-4-4",
+      "image": "https://images.unsplash.com/photo-1467987506553-8f3916508521?auto=format&fit=crop&w=400&q=80",
+      "badge": "New",
+      "options": [
+        { "price": "$2,800+", "label": "3 bd" }
+      ]
     }
   ]
 }

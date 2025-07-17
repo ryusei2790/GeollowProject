@@ -1,0 +1,140 @@
+.appMain__list {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: #fff;
+}
+
+.appMain__list--header {
+  flex-shrink: 0;
+}
+
+.appMain__list--header h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 8px;
+}
+
+.appMain__list--meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+    color: #6b7a90;
+}
+
+.appMain__list--sort {
+    cursor: pointer;
+    color: #1976d2;
+}
+
+.appMain__list--cards {
+  flex: 1;
+  overflow-y: auto;
+  min-height: 0;
+}
+
+.appMain__list--card {
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #fff;
+    transition: box-shadow 0.2s;
+    cursor: pointer;
+}
+
+.appMain__list--card:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.appMain__list--card_image {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.appMain__list--card_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.appMain__list--card_badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: #1976d2;
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.appMain__list--card_fav {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: rgba(255,255,255,0.9);
+    border: none;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #666;
+    transition: color 0.2s;
+}
+
+.appMain__list--card_fav:hover {
+    color: #e91e63;
+}
+
+.appMain__list--card_body {
+    padding: 16px;
+}
+
+.appMain__list--card_title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 4px;
+}
+
+.appMain__list--card_address {
+    font-size: 0.9rem;
+    color: #6b7a90;
+    margin-bottom: 12px;
+    line-height: 1.4;
+}
+
+.appMain__list--card_options {
+    display: flex;
+    gap: 12px;
+}
+
+.appMain__list--card_option {
+    flex: 1;
+    text-align: center;
+    padding: 8px;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    background: #f8fafd;
+}
+
+.appMain__list--card_option_price {
+    font-weight: bold;
+    color: #1976d2;
+    font-size: 0.9rem;
+    margin-bottom: 2px;
+}
+
+.appMain__list--card_option_label {
+    font-size: 0.8rem;
+    color: #6b7a90;
+} 
